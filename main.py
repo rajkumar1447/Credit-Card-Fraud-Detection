@@ -2,10 +2,10 @@ from data_preprocess import load_data, preprocess_data
 from model_training import train_model
 from evaluation import evaluate_model
 
-
+# Main function to entire process.
 def main():
     # Step 1: Load the dataset
-    df = load_data("data/creditcard.csv")
+    df = load_data("creditcard.csv")
 
     # Step 2: Preprocess the dataset
     x_train, x_test, y_train, y_test = preprocess_data(df)
